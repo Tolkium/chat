@@ -1,0 +1,7 @@
+<div class="h-100">
+    <div class="h-100" id="grid" *ngIf="personList$ | async as personlist ">
+        <div class="h-100" *ngFor="let item of personlist">
+            <app-person [personName]="item"></app-person>
+        </div>
+    </div>
+</div>

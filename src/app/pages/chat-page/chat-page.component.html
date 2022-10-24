@@ -1,0 +1,23 @@
+<div class="custom-style p-5 flex-column">
+    <div class="row">
+        <div class="col-md-8">
+            <p>Material Design</p>
+            <div class="custom-size pb-5">Simple Chat Application</div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-end pb-4">
+            <button (click)="onAddPerson()" mat-raised-button color="primary" class="align-self-end">
+                <mat-icon>add</mat-icon>
+                <span class="ps-1">ADD NEW PERSON</span>
+            </button>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="row">
+        <div class="col-lg-8 py-3">
+            <app-person-window></app-person-window>
+        </div>
+        <div class="col-lg-4">
+            <app-chat-history></app-chat-history>
+        </div>
+    </div>
+</div>

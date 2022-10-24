@@ -1,0 +1,13 @@
+<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+  <mat-form-field [floatLabel]="'always'" appearance="outline" class="pe-5">
+    <mat-label for="message">{{personName}}</mat-label>
+    <textarea matInput (keyup.enter)="onSubmit()" placeholder="Enter your message here..." id="message" name="message"
+      formControlName="message" class="resizable-false textarea-custom-hight"></textarea>
+  </mat-form-field>
+  <div mat-dialog-actions align="end" class="pe-5">
+    <button type="submit" [disabled]="buttonDisabled" mat-raised-button class="accent-green">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+      <span>SEND</span>
+    </button>
+  </div>
+</form>

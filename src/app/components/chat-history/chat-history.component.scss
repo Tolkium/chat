@@ -1,0 +1,31 @@
+.mat-list-base .mat-list-item {
+    color: #8c8b97;
+}
+mat-list-item {
+    height: auto !important;
+}
+mat-list-item {
+    .mat-icon {
+        color: #8c8b97;
+        align-self: baseline;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}
+.mat-line {
+    word-wrap: break-word;
+    white-space: unset !important;
+}
+.scrollable {
+    height: calc(100vh - 340px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.box-shadow {
+    box-shadow: 0 5px 10px #8c8b97;
+}
+.simple-border-bottom {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: #c5c4d4;
+}
