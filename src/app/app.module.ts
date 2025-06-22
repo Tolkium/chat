@@ -14,6 +14,7 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatListModule} from '@angular/material/list';
 import { MatDividerModule} from '@angular/material/divider';
 import { MatInputModule} from '@angular/material/input';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatHistoryComponent } from './components/chat-history/chat-history.component';
@@ -40,6 +41,7 @@ import { PersonWindowComponent } from './components/person-window/person-window.
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
+    MatTooltipModule,
     NgbModule
   ],
   bootstrap: [AppComponent]

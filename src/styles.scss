@@ -1,11 +1,15 @@
+@use 'src/styles/_light-theme.scss';
+@use 'src/styles/_dark-theme.scss';
+
 @import '~bootstrap/scss/bootstrap';
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-html,
 
+html,
 body {
     height: 100%;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    @extend .light-theme;
 }
 
 .custom-style {
@@ -24,7 +28,7 @@ body {
             transform: scale(0.6);
         }
         span {
-            font-size: .7rem; 
+            font-size: .7rem;
             padding-right: 0.25rem;
         }
     }

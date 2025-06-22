@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+
+$dark-primary: mat.define-palette(mat.$deep-purple-palette, 300, 100, 500);
+$dark-accent: mat.define-palette(mat.$cyan-palette, 400, 100, 700);
+$dark-warn: mat.define-palette(mat.$deep-orange-palette);
+
+$dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $dark-primary,
+    accent: $dark-accent,
+    warn: $dark-warn,
+  )
+));
+
+.dark-theme {
+  @include mat.all-component-themes($dark-theme);
+  background: #23243a;
+  color: #e0e0e0;
+}
+
+.dark-theme .mat-raised-button, .dark-theme .mat-fab, .dark-theme .mat-mini-fab {
+  box-shadow: 0 4px 20px 0 rgba(0,255,255,0.10), 0 1.5px 5px 0 rgba(103,58,183,0.15);
+}

@@ -1,0 +1,19 @@
+@use '@angular/material' as mat;
+
+$light-primary: mat.define-palette(mat.$deep-purple-palette, 500, 100, 700);
+$light-accent: mat.define-palette(mat.$light-green-palette, 400, 100, 700);
+$light-warn: mat.define-palette(mat.$red-palette);
+
+$light-theme: mat.define-light-theme((
+  color: (
+    primary: $light-primary,
+    accent: $light-accent,
+    warn: $light-warn,
+  )
+));
+
+.light-theme {
+  @include mat.all-component-themes($light-theme);
+  background: #f5f5f5;
+  color: #222;
+}

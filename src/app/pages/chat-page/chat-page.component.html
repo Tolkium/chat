@@ -1,11 +1,16 @@
+<div class="theme-switcher-topright">
+  <button mat-icon-button class="theme-switcher-btn" (click)="toggleTheme()" [matTooltip]="themeService.getCurrentTheme() === 'dark-theme' ? 'Switch to Light Mode' : 'Switch to Dark Mode'">
+    <mat-icon>{{ themeService.getCurrentTheme() === 'dark-theme' ? 'light_mode' : 'dark_mode' }}</mat-icon>
+  </button>
+</div>
 <div class="custom-style p-5 flex-column">
     <div class="row">
         <div class="col-md-8">
             <p>Material Design</p>
             <div class="custom-size pb-5">Simple Chat Application</div>
         </div>
-        <div class="col-md-4 d-flex justify-content-end pb-4">
-            <button (click)="onAddPerson()" mat-raised-button color="primary" class="align-self-end">
+        <div class="col-md-4 d-flex justify-content-end pb-4 align-items-center position-relative">
+            <button (click)="onAddPerson()" mat-raised-button color="primary" class="align-self-end me-2">
                 <mat-icon>add</mat-icon>
                 <span class="ps-1">ADD NEW PERSON</span>
             </button>
